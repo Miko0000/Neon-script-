@@ -188,3 +188,63 @@ html, body {
   flex: 1;
   overflow: hidden;
 }
+
+/*
+
+*/
+
+.terminal-tab {
+  position: fixed;
+  z-index: 9;
+  background-color: #2d2d2d;
+
+  width: 100%;
+  height: 30%;
+
+  transform: translateY(0%);
+  transition: 0.5s;
+
+  top: 100%;
+}
+
+.terminal-tab.active {
+  transform: translateY(-100%);
+}
+
+.terminal-window {
+  position: absolute;
+  left: 50%;
+  width: 94%;
+  height: 95%;
+  top: 5%;
+  transform: translateX(-50%);
+  
+  /*overflow-x: scroll;*/
+}
+
+#toggleTerminal {
+  position: absolute;
+  right: 3%;
+  bottom: 100%;
+  min-height: 1em;
+
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+#toggleTerminal.active {
+  transform: rotate(180deg);
+}
+
+/*
+.moonsole {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100vw;
+	height: 100vh;
+	overflow: scroll;
+	color: white;
+	background: black;
+	z-index: 999;
+}*/

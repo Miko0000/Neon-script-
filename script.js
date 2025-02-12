@@ -1,5 +1,4 @@
 let editor;
-
 const loadMonaco = () => {
   const script = document.createElement('script');
   script.src = 'https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.44.0/min/vs/loader.min.js';
@@ -31,6 +30,7 @@ const loadMonaco = () => {
 
 window.onload = function() {
   loadMonaco();
+  termLoader();
   switchTab('editor-tab');
 };
 
